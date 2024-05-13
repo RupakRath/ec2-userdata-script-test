@@ -15,4 +15,3 @@ chmod +x /tmp/script.sh
 
 # Execute the script
 /tmp/script.sh
-
