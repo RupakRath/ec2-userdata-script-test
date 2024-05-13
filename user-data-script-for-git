@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Install Git (if not already installed)
+sudo yum install git -y
+
+# Clone the repository containing the script
+echo "Cloning repository..."
+git clone https://github.com/RupakRath/ec2-userdata-script-test.git
+
+# Navigate to the directory containing the script
+cd ec2-userdata-script-test/
+
+# Verify the contents of the directory
+ls -la
+
+#Chnage file permission
+sudo chmod +x script.sh
+
+# Execute the script
+echo "Executing script..."
+./script.sh
